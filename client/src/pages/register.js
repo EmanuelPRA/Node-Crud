@@ -1,7 +1,7 @@
-const Login = () => {
+const Register = () => {
     return(
-      <>
-      <h2>Login</h2>
+        <>
+        <h2>Register</h2>
       <form>
         <input type="text" name="email" placeholder="Email"/>
         <input type="password" name="pass" placeholder="Password"/>
@@ -12,5 +12,4 @@ const Login = () => {
     ;
   };
   
-  export default Login;
-  
+  export default Register;
