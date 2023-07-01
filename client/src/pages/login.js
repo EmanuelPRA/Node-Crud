@@ -4,26 +4,33 @@ const Login = () => {
   if(form === "Login"){
     return(
       <>
-      <h2>Login</h2>
+      
       <form>
+      <h2>Login</h2>
         <input type="text" name="email" placeholder="Email"/>
         <input type="password" name="pass" placeholder="Password"/>
-        <button> Submit</button>
-        <button onClick={() => setForm("Register")}>Register</button>
+        <div className="form-btns">
+          <button className="primary-btn"> Submit</button>
+          <button className="secondary-btn" onClick={() => setForm("Register")}>Register</button>
+        </div>
+        
       </form>
       </>
     )
   }else{
     return(
       <>
-      <h2>Register</h2>
+      
       <form>
+      <h2>Register</h2>
         <input type="email" name="email" placeholder="Email"/>
         <input type="text" name="username" placeholder="Username"/>
         <input type="password" name="pass" placeholder="Password"/>
         <input type="password" name="pass2" placeholder="Repeat Password"/>
-        <button> Submit</button>
-        <button onClick={() => setForm("Login")}>Login</button>
+        <div className="form-btns">
+        <button className="primary-btn">Submit</button>
+        <button className="secondary-btn" onClick={() => setForm("Login")}>Login</button>
+        </div>
       </form>
       </>
     )

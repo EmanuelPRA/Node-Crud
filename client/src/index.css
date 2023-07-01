@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 html{
   padding: 0%;
 }
 body{
+  font-family: 'Noto Sans', sans-serif;
   background-color: #dbdada;
   padding: 0px;
   margin: 0%;
@@ -34,7 +37,66 @@ nav ul a{
 }
 
 nav ul a:hover{
-  color: #FF0000;
+  color: #B71234;
   text-decoration: underline;
   transition: 0.5s;
 }
+
+form{
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  padding: 25px;
+  border-radius: 25px;
+  max-width: 500px;
+  width: 90%;
+}
+
+form input, form textarea, form button{
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #272727;
+  background-color: #e7e7e7;
+  border: 0px solid #FFF;
+}
+
+.form-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+button{
+  font-weight: bold;
+}
+
+.primary-btn{
+  border: solid 5px #B71234;
+  background-color: rgba(183,18,52,1);
+  color: #FFF;
+}
+
+.primary-btn:hover{
+  background-color: rgba(183,18,52,0);
+  color: #B71234;
+  transition: 0.5s
+}
+
+.secondary-btn{
+  border: solid 5px #B71234;
+  background-color: rgba(183,18,52,0);
+  color: #B71234;
+}
+.secondary-btn:hover{
+  background-color: rgba(183,18,52,1);
+  color: #FFF;
+  transition: 0.5s;
+}
+
+/*red #B71234 */
