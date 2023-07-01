@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import AllArticles from "./pages/all-articles";
 import NoPage from "./pages/NoPage";
 import Login from "./pages/login";
-import Register from "./pages/register";
 import Admin from "./pages/admin";
 import NewArticle from "./pages/new-article";
 
@@ -17,7 +16,6 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="all-articles" element={<AllArticles />} />
           <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register/>}/>
           <Route path="admin" element={<Admin/>}/>
           <Route path="new-article" element={<NewArticle/>}/>
           <Route path="*" element={<NoPage />} />
