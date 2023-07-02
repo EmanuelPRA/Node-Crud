@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "test"
   },
   "author": "Emanuel Pračić",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mysql": "^2.18.1"
+  }
 }
